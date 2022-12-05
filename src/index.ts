@@ -1,3 +1,3 @@
-import { someFc } from "./test";
+import { someFn } from "./test";
 
-someFc(1)
+someFn(123);

@@ -1,8 +1,8 @@
-const path = require("path");
-const HTMLWebpackPlugin = require("html-webpack-plugin");
-const webpack = require("webpack");
+import path from "path";
+import webpack from "webpack";
+import HtmlWebpackPlugin from "html-webpack-plugin";
 
-module.exports = {
+const config: webpack.Configuration = {
   mode: "development", // development - на этапе разработки, production - при публикации приложения
   entry: path.resolve(__dirname, "src", "index.ts"), // точка входа приложения
   output: {
@@ -12,7 +12,7 @@ module.exports = {
     clean: true, // для очистки output, при новой сборке
   },
   plugins: [
-    new HTMLWebpackPlugin({
+    new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "public", "index.html"), // для того чтобы использовался как шаблон, и в него встраивались скрипты
     }),
     new webpack.ProgressPlugin(),
@@ -30,3 +30,5 @@ module.exports = {
     extensions: ['.tsx', '.ts', '.js'],
   },
 };
+
+export default config

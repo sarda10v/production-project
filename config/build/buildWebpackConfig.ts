@@ -4,11 +4,12 @@ import webpack from "webpack";
 import { buildPlugins } from "./buildPlugins";
 import { buildLoders } from "./buildLoaders";
 import { buildResolvers } from "./buildResolvers";
+import { buildDevServer } from "./buildDevServer";
 
 export function buildWebpackConfig(
   options: BuildOptions
 ): webpack.Configuration {
-  const { paths, mode } = options;
+  const { paths, mode, isDev } = options;
   return {
     mode, // development - на этапе разработки, production - при публикации приложения
     entry: paths.entry, // точка входа приложения
@@ -23,5 +24,8 @@ export function buildWebpackConfig(
       rules: buildLoders(),
     },
     resolve: buildResolvers(),
+    devtool: isDev ? 'inline-source-map' : undefined,
+    devServer: isDev ? buildDevServer(options) : undefined,
+
   };
 }

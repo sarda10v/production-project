@@ -19,6 +19,7 @@
     "@types/webpack-dev-server": "^4.7.2",
     "css-loader": "^6.6.0",
     "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.5.3",
     "sass": "^1.49.9",
     "sass-loader": "^12.6.0",
     "style-loader": "^3.3.1",

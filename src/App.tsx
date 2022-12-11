@@ -5,11 +5,12 @@ import { AboutPageAsync } from "./pages/AboutPage/AboutPage.async";
 import { Suspense, useContext } from "react";
 import { Theme } from "./themes/ThemeContext";
 import { useTheme } from "./themes/useTheme";
+import { classNames } from "./helpers/classNames/classNames";
 
 const App = () => {
   const { theme, toggleTheme } = useTheme();
   return (
-    <div className={`app ${theme}`}>
+    <div className={classNames("app", {}, [theme])}>
       <button onClick={toggleTheme}>
         {theme === Theme.DARK ? "DARK" : "LIGHT"}
       </button>

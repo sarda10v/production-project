@@ -3,12 +3,12 @@ type Mods = Record<string, boolean | string>;
 
 export function classNames(
   cls: string, // главный класс
-  mods: Mods, // объект с модами, где ключ - название класса, а значение boolean флаг (если true, то флаг добавляется)
-  additional: string[] // массив дополнительных классов
+  mods: Mods = {}, // объект с модами, где ключ - название класса, а значение boolean флаг (если true, то флаг добавляется)
+  additional: string[] = [] // массив дополнительных классов
 ): string {
   return [
     cls,
-    ...additional,
+    ...additional.filter(Boolean),
     ...Object.entries(mods)
       .filter(([className, value]) => Boolean(value))
       .map(([className]) => className),

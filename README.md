@@ -14,3 +14,7 @@
 
 11. AppRouter. Конфиг для роутера;
 12. Navbar. Шаблоны для разработки. Первый UI Kit компонент;
+13. Svg loader. File loader. Button UI kit;
+14. Sidebar. Layout приложения;
+
+

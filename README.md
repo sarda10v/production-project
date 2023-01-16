@@ -16,5 +16,5 @@
 12. Navbar. Шаблоны для разработки. Первый UI Kit компонент;
 13. Svg loader. File loader. Button UI kit;
 14. Sidebar. Layout приложения;
-
-
+15. i18n Интернационализация. Define plugin. Плагин для переводов;
+16. Webpack hot module replacement;

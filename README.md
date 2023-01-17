@@ -18,3 +18,4 @@
 14. Sidebar. Layout приложения;
 15. i18n Интернационализация. Define plugin. Плагин для переводов;
 16. Webpack hot module replacement;
+17. Babel. Extract plugin [optional];

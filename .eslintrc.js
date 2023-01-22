@@ -2,7 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
-    jest: true
+    jest: true,
   },
   extends: ["plugin:react/recommended", "airbnb", "plugin:i18next/recommended"],
   parser: "@typescript-eslint/parser",
@@ -36,10 +36,12 @@ module.exports = {
 
     // !! my fix;
     "no-unused-expressions": "off",
+    // "max-len": ['error', {ignoreComments: true}],
     "max-len": "off",
+    "i18next/no-literal-string": 'off',
     "react/button-has-type": "off",
 
-    "i18next/no-literal-string": ["error", { markupOnly: true }],
+    // "i18next/no-literal-string": ["error", { markupOnly: true }],
   },
   globals: {
     __IS_DEV__: true,

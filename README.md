@@ -21,4 +21,4 @@
 17. Babel. Extract plugin [optional];
 18. Настраиваем EsLint. Исправляем ошибки;
 19. Stylelint. Plugin for i18next;
-
+20. Тестовая среда. Настраиваем Jest. Пишем первый тест;

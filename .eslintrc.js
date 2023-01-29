@@ -36,8 +36,8 @@ module.exports = {
 
     // !! my fix;
     "no-unused-expressions": "off",
-    // "max-len": ['error', {ignoreComments: true}],
-    "max-len": "off",
+    "max-len": ['error', {ignoreComments: true, code: 105}],
+    // "max-len": "off",
     "i18next/no-literal-string": 'off',
     "react/button-has-type": "off",
 

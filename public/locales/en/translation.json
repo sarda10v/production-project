@@ -4,5 +4,7 @@
   "Язык": "English",
   "Страница не найдена": "Page not found",
   "Произошла непредвиденная ошибка": "An unexpected error has occurred",
-  "Обновить страницу": "Refresh Page"
+  "Обновить страницу": "Refresh Page",
+  "Кинуть ошибку": "Throw error",
+  "Toggle": "Toggle"
 }

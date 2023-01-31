@@ -6,7 +6,7 @@ import { Button } from 'shared/ui/Button/Button';
 export const BugButton = () => {
     const [error, setError] = useState(false);
     const onThrow = () => setError(!error);
-    const { t } = useTranslation();
+    const { t } = useTranslation('main');
 
     useEffect(() => {
         if (error) {
@@ -16,7 +16,7 @@ export const BugButton = () => {
 
     return (
         <Button onClick={onThrow}>
-            {t('Throw error')}
+            {t('Кинуть ошибку')}
         </Button>
     );
 };

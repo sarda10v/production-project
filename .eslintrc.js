@@ -38,12 +38,19 @@ module.exports = {
     "no-unused-expressions": "off",
     "max-len": ['error', {ignoreComments: true, code: 105}],
     // "max-len": "off",
-    "i18next/no-literal-string": 'off',
+    // "i18next/no-literal-string": 'off',
     "react/button-has-type": "off",
-
-    // "i18next/no-literal-string": ["error", { markupOnly: true }],
+    "i18next/no-literal-string": ["error", { markupOnly: true, ignoreAttribute: ['data-testid'] }],
   },
   globals: {
     __IS_DEV__: true,
   },
+  overrides: [
+    {
+        files: ['**/src/**/*.test.{ts,tsx}'],
+        rules: {
+            'i18next/no-literal-string': 'off',
+        },
+    },
+],
 };

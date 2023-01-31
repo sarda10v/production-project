@@ -30,3 +30,5 @@
 ТРЕТИЙ МОДУЛЬ:
 22. ErrorBoundary. Обработка React ошибок;
 23. Анализ размера банда BundleAnalyzer;
+24. React Testing Library Тесты на компоненты;
+

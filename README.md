@@ -28,7 +28,9 @@
 - Ролик по Redux toolkit + RTK query - https://youtu.be/Od5H_CiU2vM;
 
 ТРЕТИЙ МОДУЛЬ:
+
 22. ErrorBoundary. Обработка React ошибок;
 23. Анализ размера банда BundleAnalyzer;
 24. React Testing Library Тесты на компоненты;
+25. Настраиваем Storybook Декораторы Стори кейсы на компоненты;
 

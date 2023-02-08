@@ -9,6 +9,7 @@
 8. Функция classNames; 
 9. Архитектура FSD - теория;
 10. Настройка архитектуры;
+Стрим по 1 модулю: https://youtu.be/F2G13L8WRw4
 
 ВТОРОЙ МОДУЛЬ:
 
@@ -26,6 +27,9 @@
 22. Дополнение к модулю:
 - Ролик по тестированию - https://youtu.be/y2emL1fMRyY;
 - Ролик по Redux toolkit + RTK query - https://youtu.be/Od5H_CiU2vM;
+Стрим по 2 модулю: 
+- начало стрима - https://youtu.be/Oj84M2wrcsY
+- продолжение - https://youtu.be/1mimnM2QWT8
 
 ТРЕТИЙ МОДУЛЬ:
 
@@ -35,5 +39,10 @@
 25. Настраиваем Storybook Декораторы Стори кейсы на компоненты;
 26. Скриншотные тесты Loki Регрессионное UI тестирование;
 27. CI pipeline Автоматизация прогона тестов;
+28. Сайдбар Состояния кнопки UI Screenshot test report;
+29. Дополнение к модулю: 
+- CI CD наглядные примеры - https://youtu.be/ANj7qUgzNq4
+Стрим по 3 модулю: https://youtu.be/h_b1RITvbJM
 
+ЧЕТВЕРТЫЙ МОДУЛЬ:
 

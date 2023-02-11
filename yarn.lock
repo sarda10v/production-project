@@ -6688,10 +6688,10 @@
     "language-tags" "^1.0.5"
     "minimatch" "^3.0.4"
 
-"eslint-plugin-react-hooks@^4.3.0":
-  "integrity" "sha512-XslZy0LnMn+84NEG9jSGR6eGqaZB3133L8xewQo3fQagbQuGt7a63gf+P1NGKZavEYEC3UXaWEAA/AqDkuN6xA=="
-  "resolved" "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.3.0.tgz"
-  "version" "4.3.0"
+"eslint-plugin-react-hooks@^4.3.0", "eslint-plugin-react-hooks@^4.6.0":
+  "integrity" "sha512-oFc7Itz9Qxh2x4gNHStv3BqJq54ExXmfC+a1NjAta66IAN87Wu0R/QArgIS9qKzX3dXKPI9H5crl9QchNMY9+g=="
+  "resolved" "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.6.0.tgz"
+  "version" "4.6.0"
 
 "eslint-plugin-react@^7.28.0", "eslint-plugin-react@^7.29.2":
   "integrity" "sha512-ypEBTKOy5liFQXZWMchJ3LN0JX1uPI6n7MN7OPHKacqXAxq5gYC30TdO7wqGYQyxD1OrzpobdHC3hDmlRWDg9w=="

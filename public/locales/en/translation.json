@@ -10,5 +10,11 @@
   "Короткий язык": "En",
   "Войти": "Sign in",
   "Главная": "Main",
-  "О сайте": "About us"
+  "О сайте": "About us",
+
+  "increment": "increment",
+  "decrement": "decrement",
+  "randomValue": "randomValue",
+  "clearValue": "clearValue",
+  "value": "value"
 }

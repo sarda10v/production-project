@@ -53,7 +53,10 @@ module.exports = {
       'jsx-a11y/no-static-element-interactions': 'off',
       'jsx-a11y/click-events-have-key-events': 'off',
       "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
-      "react-hooks/exhaustive-deps": "error" // Checks effect dependencies
+      "react-hooks/exhaustive-deps": "error", // Checks effect dependencies
+      "import/order": "off", // удалить при деплое
+      
+      "no-param-reassign": "off"
   },
   globals: {
       __IS_DEV__: true,

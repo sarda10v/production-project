@@ -52,10 +52,15 @@
 - [CI CD наглядные примеры;](https://youtu.be/ANj7qUgzNq4)
 - [Стрим по 3 модулю;](https://youtu.be/h_b1RITvbJM)
 
-4.1 Работа с данными. Redux. Модальное окно
+[4.1 Работа с данными. Redux. Модальное окно](https://www.youtube.com/playlist?list=PL9WXomA2l3swYgfDeoQOoDDULaMQe3AjS)
 -
 
-29. Модальное окно. Portal;
-30. Redux toolkit Entity Тесты на всех уровнях;
+[29. Модальное окно. Portal;](https://www.youtube.com/watch?v=qVX3cQ-tzcM&t=2118s)
+
+[30. Redux toolkit Entity Тесты на всех уровнях;](https://www.youtube.com/watch?v=N3q8PbXAmRs)
+
+[31. Исправляем глобальные стили для Modal и тем;](https://www.youtube.com/watch?v=9PhJEdS-_dQ&t=189s)
+
+[31.1. Json server Имитация бэкенда](https://www.youtube.com/watch?v=GLW6OjZ2PHQ)
 
 ↑↑↑ ↑↑↑ ↑↑↑ ↑↑↑ ↑↑↑ ↑↑↑ ↑↑↑ ↑↑↑ ↑↑↑ ↑↑↑ ↑↑↑

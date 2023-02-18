@@ -1,3 +1,6 @@
+<details>
+<summary></summary>
+
 1 Webpack. Введение в арх-ру. Code splitting. Css Modules
 -
 1. Начало разработки Основы Webpack. Добавляем TypeScript;
@@ -64,3 +67,5 @@
 [31.1. Json server Имитация бэкенда](https://www.youtube.com/watch?v=GLW6OjZ2PHQ)
 
 ↑↑↑ ↑↑↑ ↑↑↑ ↑↑↑ ↑↑↑ ↑↑↑ ↑↑↑ ↑↑↑ ↑↑↑ ↑↑↑ ↑↑↑
+</details>
+

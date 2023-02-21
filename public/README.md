@@ -55,7 +55,7 @@
 - [CI CD наглядные примеры;](https://youtu.be/ANj7qUgzNq4)
 - [Стрим по 3 модулю;](https://youtu.be/h_b1RITvbJM)
 
-[4.1 Работа с данными. Redux. Модальное окно](https://www.youtube.com/playlist?list=PL9WXomA2l3swYgfDeoQOoDDULaMQe3AjS)
+4 Работа с данными. Redux. Модальное окно. Авторизация. pre commit hooks (husky). Работа с текстом
 -
 
 [29. Модальное окно. Portal;](https://www.youtube.com/watch?v=qVX3cQ-tzcM&t=2118s)
@@ -64,8 +64,21 @@
 
 [31. Исправляем глобальные стили для Modal и тем;](https://www.youtube.com/watch?v=9PhJEdS-_dQ&t=189s)
 
-[31.1. Json server Имитация бэкенда](https://www.youtube.com/watch?v=GLW6OjZ2PHQ)
+[31.1. Json server Имитация бэкенда;](https://www.youtube.com/watch?v=GLW6OjZ2PHQ)
 
-↑↑↑ ↑↑↑ ↑↑↑ ↑↑↑ ↑↑↑ ↑↑↑ ↑↑↑ ↑↑↑ ↑↑↑ ↑↑↑ ↑↑↑
+[32. Кастомный Input Окно авторизации Lazy modal;](https://youtu.be/47JjrpQNiFk)
+
+[33. Husky. Pre commit хуки;](https://youtu.be/cB-o1lBOEBQ)
+
+[34. Авторизация Reducers, slices, async thunk Custom text;](https://youtu.be/64Qug-p83xY)
+
+<h4>Дополнение к модулю:</h4>
+
+- [Стрим по 4 модулю;](https://www.youtube.com/live/C8vJ36sRXbQ?feature=share)
+
+
+5 Асинк редюссеры. Тесты. Инстанс API. TS strict mode. Модуль профиля
+-
+
 </details>
 

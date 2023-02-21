@@ -16,5 +16,8 @@
   "decrement": "decrement",
   "randomValue": "randomValue",
   "clearValue": "clearValue",
-  "value": "value"
+  "value": "value",
+
+  "Введите username": "Enter username",
+  "Введите пароль": "Enter password"
 }

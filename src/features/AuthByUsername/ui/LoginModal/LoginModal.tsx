@@ -1,18 +1,18 @@
+import { Suspense } from 'react';
+import { Loader } from 'shared/ui/Loader/Loader';
 import { Modal } from 'shared/ui/Modal/Modal';
-import { LoginForm } from '../LoginForm/LoginForm';
+import { LoginFormAsync } from '../LoginForm/LoginForm.async';
 
 interface LoginModalProps {
-    isOpen: boolean;
-    onClose: () => void;
+  isOpen: boolean;
+  onClose: () => void;
 }
 // stylelint ругался (удалил стили)
 
 export const LoginModal = ({ isOpen, onClose }: LoginModalProps) => (
-    <Modal
-        isOpen={isOpen}
-        onClose={onClose}
-        lazy
-    >
-        <LoginForm />
+    <Modal isOpen={isOpen} onClose={onClose} lazy>
+        <Suspense fallback={<Loader />}>
+            <LoginFormAsync />
+        </Suspense>
     </Modal>
 );

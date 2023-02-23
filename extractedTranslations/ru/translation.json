@@ -1,4 +1,5 @@
 {
+  "": "",
   "Lorem, ipsum dolor sit amet consectetur adipisicing elit": {
     " Dolor doloremque sequi ad ex laboriosam qui illo perferendis maxime explicabo est, excepturi dolores suscipit deserunt blanditiis": {
       " Cumque quae sed quo ipsum!": " Cumque quae sed quo ipsum!"
@@ -18,6 +19,8 @@
   "Введите username": "Введите username",
   "Введите пароль": "Введите пароль",
   "Войти": "Войти",
+  "Вы ввели неверный логин и пароль": "Вы ввели неверный логин и пароль",
+  "Выйти": "Выйти",
   "Главная": "Главная",
   "Главная страница": "Главная страница",
   "Еhrow error": "Еhrow error",
@@ -27,5 +30,6 @@
   "Произошла непредвиденная ошибка": "Произошла непредвиденная ошибка",
   "Страница не найдена": "Страница не найдена",
   "Счетчик": "Счетчик",
+  "Форма авторизации": "Форма авторизации",
   "Язык": "Язык"
 }

@@ -23,6 +23,13 @@
   ],
 
   "profile": { 
-    "name": "typicode" 
+    "firstname": "Ибрагим", 
+    "lastname": "Сардалов", 
+    "age": "23", 
+    "currency": "RUB", 
+    "country": "Russia", 
+    "city": "Grozny", 
+    "username": "admin", 
+    "avatar": "https://img.freepik.com/premium-vector/cartoon-young-man-glasses-vector-person-illustration-cute-male-portrait_641602-526.jpg?w=740"
   }
 }

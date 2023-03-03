@@ -11,6 +11,8 @@ export class TestAsyncThunk<Return, Arg, RejectedValue> {
 
     actionCreator: ActionCreatorType<Return, Arg, RejectedValue>;
 
+    api: any;
+
     constructor(actionCreator: ActionCreatorType<Return, Arg, RejectedValue>) {
         this.actionCreator = actionCreator;
         this.dispatch = jest.fn();

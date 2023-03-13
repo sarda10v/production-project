@@ -1,11 +1,11 @@
-type Mods = Record<string, boolean | string>;
+export type Mods = Record<string, boolean | string | undefined>;
 // Record - это специальный тайпскриптовый класс/тип, который обозначает что в качестве ключа будет использоваться string,
 // а в качестве значения boolean или string
 
 export function classNames(
     cls: string, // главный класс
     mods: Mods = {}, // объект с модами, где ключ - название класса, а значение boolean флаг (если true, то флаг добавляется)
-    additional: string[] = [], // массив дополнительных классов
+    additional: Array<string | undefined> = [], // массив дополнительных классов
 ): string {
     return [
         cls,

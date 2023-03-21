@@ -1,35 +1,33 @@
 {
   "posts": [
-    { 
-        "id": 1, 
-        "title": "json-server", 
-        "author": "typicode" 
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
     }
   ],
-
   "comments": [
-    { 
-        "id": 1, 
-        "body": "some comment", 
-        "postId": 1 
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
     }
   ],
   "users": [
-    { 
-        "id": 1, 
-        "username": "1", 
-        "password": "1"
+    {
+      "id": 1,
+      "username": "1",
+      "password": "1"
     }
   ],
-
-  "profile": { 
-    "firstname": "Ибрагим", 
-    "lastname": "Сардалов", 
-    "age": "23", 
-    "currency": "RUB", 
-    "country": "Russia", 
-    "city": "Grozny", 
-    "username": "admin", 
+  "profile": {
+    "firstname": "Ibragim",
+    "lastname": "Sardalov",
+    "age": 24,
+    "currency": "EUR",
+    "country": "Armenia",
+    "city": "Grozny",
+    "username": "admin",
     "avatar": "https://img.freepik.com/premium-vector/cartoon-young-man-glasses-vector-person-illustration-cute-male-portrait_641602-526.jpg?w=740"
   }
 }

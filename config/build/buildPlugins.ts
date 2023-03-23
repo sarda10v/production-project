@@ -8,7 +8,7 @@ export function buildPlugins({
     paths,
     isDev,
     apiUrl,
-    project
+    project,
 }: BuildOptions): webpack.WebpackPluginInstance[] {
     const plugins = [
         new HtmlWebpackPlugin({

@@ -8,7 +8,7 @@
 //     age: 22,
 //     country: Country.Ukraine,
 //     lastname: 'ulbi tv',
-//     firstname: 'asd',
+//     first: 'asd',
 //     city: 'asf',
 //     currency: Currency.USD,
 // };
@@ -20,8 +20,8 @@
 //         expect(result).toEqual([]);
 //     });
 
-//     test('without firstname and last name', async () => {
-//         const result = validateProfileData({ ...data, firstname: '', lastname: '' });
+//     test('without first and last name', async () => {
+//         const result = validateProfileData({ ...data, first: '', lastname: '' });
 
 //         expect(result).toEqual([
 //             ValidateProfileError.INCORRECT_USER_DATA,

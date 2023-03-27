@@ -2,6 +2,12 @@
     cursor: pointer;
     color: var(--primary-color);
     padding: 6px 15px;
+
+    &:hover {
+        opacity: 0.8;
+        fill-opacity: 80%;
+        stroke-opacity: 80%;
+    }
 }
 
 .clear,

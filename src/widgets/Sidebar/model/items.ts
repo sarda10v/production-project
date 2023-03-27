@@ -36,4 +36,3 @@ export const SidebarItemList: SidebarItemType[] = [
         authOnly: true,
     },
 ];
-

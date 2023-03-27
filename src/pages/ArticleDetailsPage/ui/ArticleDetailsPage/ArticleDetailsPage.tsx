@@ -13,7 +13,7 @@ const ArticleDetailsPage = (props: ArticleDetailsPageProps) => {
 
     return (
         <div className={classNames(cls.ArticleDetailsPage, {}, [className])}>
-            {t("ARTICLE DETAILS")}
+            {t('ARTICLE DETAILS')}
         </div>
     );
 };

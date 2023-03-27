@@ -17,6 +17,7 @@ export function buildWebpackConfig(
             filename: '[name].[contenthash].js', // [contenthash] - для генерации уникальные индификаторы
             path: paths.build,
             clean: true, // для очистки output, при новой сборке
+            publicPath: '/',
         },
         plugins: buildPlugins(options),
         module: {

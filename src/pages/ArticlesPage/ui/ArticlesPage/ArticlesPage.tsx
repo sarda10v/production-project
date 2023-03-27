@@ -15,7 +15,7 @@ const ArticlesPage = (props: ArticlesPageProps) => {
     return (
         <div className={classNames(cls.ArticlesPage, {}, [className])}>
             {/* {t('ARTICLES PAGE')} */}
-            <ArticleDetailsPage/>
+            <ArticleDetailsPage />
         </div>
     );
 };

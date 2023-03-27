@@ -134,25 +134,25 @@
 //     );
 // });
 
-import { classNames } from "shared/lib/classNames/classNames";
-import { useTranslation } from "react-i18next";
+import { classNames } from 'shared/lib/classNames/classNames';
+import { useTranslation } from 'react-i18next';
 import {
-  DynamicModuleLoader,
-  ReducersList,
-} from "shared/lib/components/DynamicModuleLoader/DynamicModuleLoader";
-import { memo, useCallback, useEffect } from "react";
-import { useSelector } from "react-redux";
-import { useAppDispatch } from "shared/lib/hooks/useAppDispathch/useAppDispathch";
-import { fetchArticleById } from "../../model/services/fetchArticleById/fetchArticleById";
-import { articleDetailsReducer } from "../../model/slice/articleDetailsSlice";
-import cls from "./ArticleDetails.module.scss";
+    DynamicModuleLoader,
+    ReducersList,
+} from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
+import { memo, useCallback, useEffect } from 'react';
+import { useSelector } from 'react-redux';
+import { useAppDispatch } from 'shared/lib/hooks/useAppDispathch/useAppDispathch';
+import { fetchArticleById } from '../../model/services/fetchArticleById/fetchArticleById';
+import { articleDetailsReducer } from '../../model/slice/articleDetailsSlice';
+import cls from './ArticleDetails.module.scss';
 import {
-  getArticleDetailsData,
-  getArticleDetailsError,
-  getArticleDetailsIsLoading,
-} from "../../model/selectors/articleDetails";
-import { Text, TextAlign } from "shared/ui/Text/Text";
-import { Skeleton } from "shared/ui/Skeleton/Skeleton";
+    getArticleDetailsData,
+    getArticleDetailsError,
+    getArticleDetailsIsLoading,
+} from '../../model/selectors/articleDetails';
+import { Text, TextAlign } from 'shared/ui/Text/Text';
+import { Skeleton } from 'shared/ui/Skeleton/Skeleton';
 
 interface ArticleDetailsProps {
   className?: string;
@@ -160,55 +160,55 @@ interface ArticleDetailsProps {
 }
 
 const reducers: ReducersList = {
-  articleDetails: articleDetailsReducer,
+    articleDetails: articleDetailsReducer,
 };
 
 export const ArticleDetails = memo((props: ArticleDetailsProps) => {
-  const { className, id } = props;
-  const { t } = useTranslation();
-  const dispatch = useAppDispatch();
-  const isLoading = useSelector(getArticleDetailsIsLoading);
-  const article = useSelector(getArticleDetailsData);
-  const error = useSelector(getArticleDetailsError);
+    const { className, id } = props;
+    const { t } = useTranslation();
+    const dispatch = useAppDispatch();
+    const isLoading = useSelector(getArticleDetailsIsLoading);
+    const article = useSelector(getArticleDetailsData);
+    const error = useSelector(getArticleDetailsError);
 
-  useEffect(() => {
-    if (__PROJECT__ !== "storybook") {
-      dispatch(fetchArticleById(id));
+    useEffect(() => {
+        if (__PROJECT__ !== 'storybook') {
+            dispatch(fetchArticleById(id));
+        }
+    }, [dispatch, id]);
+
+    let content;
+    if (isLoading) {
+        content = (
+            <>
+                <Skeleton
+                    className={cls.avatar}
+                    width={200}
+                    height={200}
+                    border="50%"
+                />
+                <Skeleton className={cls.title} width={300} height={32} />
+                <Skeleton className={cls.skeleton} width={600} height={24} />
+                <Skeleton className={cls.skeleton} width="100%" height={200} />
+                <Skeleton className={cls.skeleton} width="100%" height={200} />
+            </>
+        );
+    } else if (error) {
+        content = (
+            <Text
+                align={TextAlign.CENTER}
+                title={t('Произошла ошибка при загрузке статьи.')}
+            />
+        );
+    } else {
+        content = <div> Article Details</div>;
     }
-  }, [dispatch, id]);
 
-  let content;
-  if (isLoading) {
-    content = (
-      <>
-        <Skeleton
-          className={cls.avatar}
-          width={200}
-          height={200}
-          border="50%"
-        />
-        <Skeleton className={cls.title} width={300} height={32} />
-        <Skeleton className={cls.skeleton} width={600} height={24} />
-        <Skeleton className={cls.skeleton} width="100%" height={200} />
-        <Skeleton className={cls.skeleton} width="100%" height={200} />
-      </>
+    return (
+        <DynamicModuleLoader reducers={reducers} removeAfterUnmount>
+            <div className={classNames(cls.ArticleDetails, {}, [className])}>
+                {content}
+            </div>
+        </DynamicModuleLoader>
     );
-  } else if (error) {
-    content = (
-      <Text
-        align={TextAlign.CENTER}
-        title={t("Произошла ошибка при загрузке статьи.")}
-      />
-    );
-  } else {
-    content = <div> Article Details</div>;
-  }
-
-  return (
-    <DynamicModuleLoader reducers={reducers} removeAfterUnmount>
-      <div className={classNames(cls.ArticleDetails, {}, [className])}>
-        {content}
-      </div>
-    </DynamicModuleLoader>
-  );
 });

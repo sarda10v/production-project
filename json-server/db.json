@@ -107,13 +107,17 @@
       "id": "1",
       "username": "1",
       "password": "1",
-      "role": "ADMIN"
+      "role": "ADMIN",
+      "avatar": "https://img.freepik.com/premium-vector/cartoon-young-man-glasses-vector-person-illustration-cute-male-portrait_641602-526.jpg?w=740"
+
     },
     {
       "id": "2",
       "username": "user",
       "password": "123",
-      "role": "USER"
+      "role": "USER",
+      "avatar": "https://img.freepik.com/premium-vector/cartoon-young-man-glasses-vector-person-illustration-cute-male-portrait_641602-526.jpg?w=740"
+
     }
   ],
   "profile": {
